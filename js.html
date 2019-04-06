@@ -1,0 +1,255 @@
+=============
+Array Methood
+=============
+	length			method alert the number of items in an array.
+	toString{}		convert to string
+	join() 			join all array element into one string
+	unshift() 		Add first Item
+	shift() 		Removed first Item
+	push()			Add last Item
+	pop() 			Removed last Item
+	pop()			মেথড বাদ দেওয়া ভ্যালুকে রিটার্ন করেঃ				
+	push()			মেথড অ্যারে এর নতুন দৈর্ঘ্য রিটার্ন করে
+	splice()		মেথড অ্যারেতে নতুন এলিমেন্ট যোগ করার জন্য ব্যবহার করা হয়			var.splice(0,3," S"," R");
+	splice()		মেথড অ্যারে থেকে এলিমেন্ট বাদ দেবার জন্য ব্যবহার করা হয়			var.splice(0,2)
+	concat()		মেথড দুইটি অ্যারেকে যুক্ত করে একটি নতুন অ্যারে তৈরি করে
+	slice() 		মেথড একটি অ্যারের অংশকে আলাদা করে নতুন একটি অ্যারে তৈরি করে।
+	
+
+	Array Sort
+	----------
+	sort()			method sorts an array alphabetically A-Z
+	reverse()		method reverses the elements in an array.
+	Math.max.apply 	to find the highest number in an array.
+	Math.min.apply 	to find the lowest number in an array
+	
+=======================
+Array Iteration Methods			operate on every array item.
+=======================
+	forEach() 		method calls a function (a callback function) once for each array element.
+
+==============	
+String Methood
+==============
+	.length;		output string length
+	.indexOf		(x)		to find index of specific string
+	.indexOf		(x,y)
+	.lastIndexOf	(x)		method returns the index of the last occurrence of a specified text in a string
+	.lastIndexOf	(x,y)	end to beginning
+	.search			()
+	.slice			(start, end)	negative parameter allowed.
+    .substring		(start, end)	negative parameter not allowed.
+    .substr			(start, length)
+	.replace() 		method replaces a specified value with another value in a string
+	.
+	.concat()
+	.trim()
+	.charAt() 		method returns the character at a specified index (position) in a string	
+	.charCodeAt() 	method returns the unicode of the character at a specified index in a string
+	.split()		A string can be converted to an array with the split() method:
+	
+	
+	ECMAScript 5 (2009) allows property access [ ] on strings:
+		<script>
+			var str = "HELLO WORLD";
+			document.getElementById("demo").innerHTML = str[0];
+		</script>
+		<!-- return H -->
+
+		
+=============================
+Number Methods
+=============================
+	Methods
+	-------
+	toString()				method returns a number as a string.
+	toString(10/2/8/6)		also convert number to decimal,binary,octal & hexadecimal by  inputing following parameter.
+	toExponential() 		returns a string, with a number rounded and written using exponential notation.
+	toFixed() 				returns a string, with the number written with a specified number of decimals.
+	toPrecision() 			returns a string, with a number written with a specified length.
+	valueOf()				returns a number as a number.
+	
+	Global Methods
+	--------------
+	Number() 				Returns a number, converted from its argument.
+	parseFloat() 			Parses its argument and returns a floating point number
+	parseInt() 				Parses its argument and returns an integer
+
+=================
+Number Properties
+=================
+	MAX_VALUE 				Returns the largest number possible in JavaScript
+	MIN_VALUE 				Returns the smallest number possible in JavaScript
+	POSITIVE_INFINITY 		Represents infinity (returned on overflow)
+	NEGATIVE_INFINITY 		Represents negative infinity (returned on overflow)
+	NaN 					Represents a "Not-a-Number" value
+	--------------------------------------------------
+	NOTE:Number Properties Cannot be Used on Variables
+	--------------------------------------------------
+	
+	
+===========
+Date Object
+===========
+	new Date()	creates a new date object with the current date and time:
+	new Date(year, month, day, hours, minutes, seconds, milliseconds)
+	new Date(milliseconds)
+	new Date(date string)
+	One and two digit years will be interpreted as 19xx:
+	var d = new Date(99, 11, 24)	here 99 means 1999 & 9 means 1909
+	new Date(dateString) 	creates a new date object from a date string.
+	new Date(milliseconds) 	creates a new date object as zero time plus milliseconds:
+	(01 January 1970 plus 100 000 000 000 milliseconds is approximately 03 March 19731)
+	
+============
+Date Methods
+============
+	toUTCString() 	method converts a date to a UTC string (a date display standard). 	(Result: Fri, 22 Mar 2019 05:53:46 GMT)
+	toDateString() 	method converts a date to a more readable format. 					(result: Fri Mar 22 2019)
+
+===========
+Date Format
+===========
+	ISO Date 		"2015-03-25" (The International Standard)	return: Wed Mar 25 2015 06:00:00 GMT+0600 (Bangladesh Standard Time)
+	Short Date 		"03/25/2015"								return: Wed Mar 25 2015 00:00:00 GMT+0600 (Bangladesh Standard Time)
+	Long Date 		"Mar 25 2015" or "25 Mar 2015"
+	Date.parse() 	returns the number of milliseconds between the date and January 1, 1970
+	
+
+================
+Get Date Methods
+================
+	getFullYear() 		Get the year as a four digit number (yyyy)
+	getMonth() 			Get the month as a number (0-11)
+	getDate() 			Get the day as a number (1-31)
+	getHours() 			Get the hour (0-23)
+	getMinutes() 		Get the minute (0-59)
+	getSeconds() 		Get the second (0-59)
+	getMilliseconds() 	Get the millisecond (0-999)
+	getTime() 			Get the time (milliseconds since January 1, 1970)
+	getDay() 			Get the weekday as a number (0-6)
+	Date.now() 			Get the time. ECMAScript 5.
+	
+	
+================
+UTC Date Methods
+================
+	getUTCFullYear() 		Same as getFullYear(), but returns the UTC year
+	getUTCMonth() 			Same as getMonth(), but returns the UTC month
+	getUTCDate() 			Same as getDate(), but returns the UTC date
+	getUTCHours() 			Same as getHours(), but returns the UTC hour
+	getUTCMinutes() 		Same as getMinutes(), but returns the UTC minutes
+	getUTCSeconds() 		Same as getSeconds(), but returns the UTC seconds
+	getUTCMilliseconds() 	Same as getMilliseconds(), but returns the UTC milliseconds
+	
+	getUTCDay() 			Same as getDay(), but returns the UTC day
+	
+
+================
+Set Date Methods
+================
+	setFullYear() 		Set the year (optionally month and day)
+	setMonth() 			Set the month (0-11)
+	setDate() 			Set the day as a number (1-31)	
+	setHours() 			Set the hour (0-23)
+	setMinutes() 		Set the minutes (0-59)
+	setSeconds() 		Set the seconds (0-59)
+	setMilliseconds() 	Set the milliseconds (0-999)
+	setTime() 			Set the time (milliseconds since January 1, 1970)
+	
+	
+===========
+Math Object
+===========
+	Math.PI 			returns the ratio of a circle's circumference to its diameter.
+	Math.round(x) 		returns the value of x rounded to its nearest integer. [5.5=6, 5.4=4]
+	Math.pow(x, y) 		returns the value of x to the power of y.
+	Math.sqrt(x) 		returns the square root of x.
+	
+	Math.ceil() 		rounds a number up to its nearest integer. [5.1/2/3/4/5/6/8/9=6]
+	Math.floor(x) 		returns the value of x rounded down to its nearest integer. [5.1/2/3/4/5/6/8/9=4]
+	
+	Math.sin(x) 		returns the sine (a value between -1 and 1) of the angle x (given in radians).
+	Math.cos(x) 		returns the cosine (a value between -1 and 1) of the angle x (given in radians).
+	Math.min()			can be used to find the lowest value in a list of arguments:
+	Math.max() 			can be used to find the highest value in a list of arguments:
+	Math.random() 		returns a random number between 0 (inclusive), and 1 (exclusive).
+	
+	-----
+	Math.
+	-----
+	abs(x) 			Returns the absolute value of x
+	acos(x) 		Returns the arccosine of x, in radians
+	acosh(x) 		Returns the hyperbolic arccosine of x
+	asin(x) 		Returns the arcsine of x, in radians
+	asinh(x) 		Returns the hyperbolic arcsine of x
+	atan(x) 		Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+	atan2(y, x) 	Returns the arctangent of the quotient of its arguments
+	atanh(x) 		Returns the hyperbolic arctangent of x
+	cbrt(x) 		Returns the cubic root of x
+	ceil(x) 		Returns x, rounded upwards to the nearest integer
+	cos(x) 			Returns the cosine of x (x is in radians)
+	cosh(x) 		Returns the hyperbolic cosine of x
+	exp(x) 			Returns the value of Ex
+	floor(x) 		Returns x, rounded downwards to the nearest integer
+	log(x) 			Returns the natural logarithm (base E) of x
+	max(x, y, z, ..., n) 	Returns the number with the highest value
+	min(x, y, z, ..., n) 	Returns the number with the lowest value
+	pow(x, y) 		Returns the value of x to the power of y
+	random() 		Returns a random number between 0 and 1
+	round(x) 		Rounds x to the nearest integer
+	sin(x) 			Returns the sine of x (x is in radians)
+	sinh(x) 		Returns the hyperbolic sine of x
+	sqrt(x) 		Returns the square root of x
+	tan(x) 			Returns the tangent of an angle
+	tanh(x) 		Returns the hyperbolic tangent of a number
+	trunc(x) 		Returns the integer part of a number (x)	
+	
+===========================
+Math Properties (Constants)
+===========================
+	Math.E        // returns Euler's number
+	Math.PI       // returns PI
+	Math.SQRT2    // returns the square root of 2
+	Math.SQRT1_2  // returns the square root of 1/2
+	Math.LN2      // returns the natural logarithm of 2
+	Math.LN10     // returns the natural logarithm of 10
+	Math.LOG2E    // returns base 2 logarithm of E
+	Math.LOG10E   // returns base 10 logarithm of E 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
