@@ -7,7 +7,7 @@
 	<meta name="description" content=""/>
 	<title>JS fundamental</title>
 	<link rel="shortcut icon" href="fevicon.png" type="image/x-icon" />
-	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
 	<section id="content">
@@ -17,13 +17,17 @@
 		<div id="main-content">
 			<h5>js output details</h5>
 			<p><span id="demo"></span></p>
-			<p><span id="demo2"></span></p>
 			<br/>			
 			<br/>
 			<script>
-				
-				document.getElementById("demo").innerHTML = new Date()+"<br/>";
-				document.getElementById("demo2").innerHTML = "Hello World";
+				var i,text;
+				i = 0;
+				text = "";
+				while(i<5){
+					text+="Number is "+i+"<br/>";
+					i++;	
+				}
+				document.getElementById("demo").innerHTML = text+"<br/>";
 			</script>
 			
 			

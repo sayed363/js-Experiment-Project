@@ -9,7 +9,7 @@ body{
 	margin:0 auto;
 }
 #header,#footer{
-	background-color:#ddd;
+	background-color:rgb(58, 8, 8);
 	text-align:center;
 	padding:15px 10px;
 }
