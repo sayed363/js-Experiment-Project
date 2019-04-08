@@ -16,8 +16,15 @@
 		</div>
 		<div id="main-content">
 			<script>
-				var x = 123;
-				document.write(typeof String(x));
+				var cars = ["BMW", "Volvo", "Saab", "Ford"];
+				var len = cars.length;
+				var i = 0;
+				var text = "";
+				while(i<len){
+					text += cars[i]+"<br/>";
+					i++
+				}
+				document.write(text);
 			</script>
 			
 			
