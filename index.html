@@ -15,11 +15,11 @@
 			<h3><script>document.write('Javascript Fundamental Tutorial')</script></h3>
 		</div>
 		<div id="main-content">
-			<p id="demo">{}</p>
+			<p id="demo">Use String replace() With a Regular Expression</p>
 			<hr/>
 			<script>
-				var x = "Dhaka is the capital of Bangladesh";
-				var sear = x.replace("Dhaka","Chattogram");
+				var x = "Visit Bangladesh";
+				var sear = x.replace(/bangladesh/i, "Pakistan");
 				document.getElementById("demo").innerHTML = sear;
 				
 			</script>
