@@ -15,16 +15,16 @@
 			<h3><script>document.write('Javascript Fundamental Tutorial')</script></h3>
 		</div>
 		<div id="main-content">
+		
+			<button onclick="myFunction()">Try it</button>
+			<p id="demo">Resust here</p>
 			<script>
-				var cars = ["BMW", "Volvo", "Saab", "Ford"];
-				var len = cars.length;
-				var i = 0;
-				var text = "";
-				while(i<len){
-					text += cars[i]+"<br/>";
-					i++
+				function myFunction(){
+					var y = "5";
+					var x = + y;
+					document.getElementById("demo").innerHTML = typeof y + "<br/>" + typeof x;
 				}
-				document.write(text);
+				
 			</script>
 			
 			
