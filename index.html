@@ -15,18 +15,13 @@
 			<h3><script>document.write('Javascript Fundamental Tutorial')</script></h3>
 		</div>
 		<div id="main-content">
-		
-			<button onclick="myFunction()">Try it</button> <br/>
-			<!-- <p id="demo">Resust here</p> -->
+			<p id="demo">{}</p>
+			<hr/>
 			<script>
-				var sec = 24*60*60;
-				document.write("1 Day = "+sec+" Seconds"+"<br/>");	
+				var x = "Dhaka is the capital of Bangladesh";
+				var sear = x.replace("Dhaka","Chattogram");
+				document.getElementById("demo").innerHTML = sear;
 				
-				var yr = sec*6365;
-				document.write("1 Year = "+yr+" Seconds"+"<br/>");	
-				
-				var x = new Date().getTime();
-				document.write(x);				
 			</script>
 			
 			
