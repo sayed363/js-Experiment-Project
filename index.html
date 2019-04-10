@@ -15,18 +15,27 @@
 			<h3><script>document.write('Javascript Fundamental Tutorial')</script></h3>
 		</div>
 		<div id="main-content">
-		
-		
 			
-			<button onclick="myFunction()">Try It</button> <br/>
-			<p id="str">Dhaka is the capital of Bangladesh</p>
-			<p id="demo">resuls here</p>
-			<hr/>
+			<input type="text" id="txt" style="padding:6px;"/>
+			<button onclick="myFunction()">Test Input</button> <br/>
+			<p id="demo">Message here</p>
+			
 			<script>
 				function myFunction(){
-					var x = document.getElementById("str").innerHTML;
-					var w = /a/.exec(x);
-					document.getElementById("demo").innerHTML = w[2];
+					var message, x;
+					message = document.getElementById("demo");
+					message.innerHTML = "";
+					x = document.getElementById("txt").value;
+				try{
+					if(x == "") throw "empty";
+					if(isNaN(x)) throw "not a Number";
+					x = Number(x);
+					if(x < 5) throw "too low";
+					if(x > 10) throw "too high";
+				}
+				catch(error){
+					message.innerHTML = "Input is "+error;
+				}
 				}
 				
 			</script>
