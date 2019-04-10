@@ -15,12 +15,19 @@
 			<h3><script>document.write('Javascript Fundamental Tutorial')</script></h3>
 		</div>
 		<div id="main-content">
-			<p id="demo">Use String replace() With a Regular Expression</p>
+		
+		
+			
+			<button onclick="myFunction()">Try It</button> <br/>
+			<p id="str">Dhaka is the capital of Bangladesh</p>
+			<p id="demo">resuls here</p>
 			<hr/>
 			<script>
-				var x = "Visit Bangladesh";
-				var sear = x.replace(/bangladesh/i, "Pakistan");
-				document.getElementById("demo").innerHTML = sear;
+				function myFunction(){
+					var x = document.getElementById("str").innerHTML;
+					var w = /a/.exec(x);
+					document.getElementById("demo").innerHTML = w[2];
+				}
 				
 			</script>
 			
