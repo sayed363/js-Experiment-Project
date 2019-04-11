@@ -15,22 +15,19 @@
 			<h3><script>document.write('Javascript Fundamental Tutorial')</script></h3>
 		</div>
 		<div id="main-content">
-			<h3>Javascript Error Object</h3>
-			<p>You cannot URI decode percent signs</p>
+			<h3>Javascript Scope</h3>
+			<p>Exapmple of global scope</p>
 			
 			<br/>
-			
+			<button onclick="myFunction()">Try It</button> <br/>
 			<p id="demo">Message</p>
 			
 			<script>
-				try{
-					decodeURI("%%%");
+				var carName = "Volvo"
+				document.write(typeof carName);
+				function myFunction(){
+					document.getElementById("demo").innerHTML = carName;
 				}
-				catch(message){
-					document.getElementById("demo").innerHTML = message.name;
-				}
-				<!-- output : ReferenceError -->
-				
 			</script>
 			
 			
