@@ -15,32 +15,25 @@
 			<h3><script>document.write('Javascript Fundamental Tutorial')</script></h3>
 		</div>
 		<div id="main-content">
-			<h3>Finally Statement</h3>
-			<p>Please Input a number between 5 and 10.</p>
-			<input type="text" id="txt" style="padding:6px;"/>
+			<h3>Javascript Error Object</h3>
+			<p>You cannot use the value of a non-existing variable</p>
+			
+			<br/>
+			
 			<button onclick="myFunction()">Test Input</button> <br/>
-			<p id="demo">Input Message</p>
+			<p id="demo">Error Message</p>
 			
 			<script>
 				function myFunction(){
-					var message, x;
-					x = document.getElementById("txt").value;
-					message = document.getElementById("demo");
-					message.innerHTML = "";
-				try{
-					if(x == "") throw "empty";
-					if(isNaN(x)) throw "not a Number";
-					x = Number(x);
-					if(x < 5) throw "too low";
-					if(x > 10) throw "too high";
+					var x;
+					try{
+						x = y + 1;
+					}
+					catch(err){
+						document.getElementById("demo").innerHTML = err.mane;
+					}
 				}
-				catch(error){
-					message.innerHTML = "Input is "+error;
-				}
-				finally{
-					message = document.getElementById("demo");
-				}
-				}
+				<!-- output : ReferenceError -->
 				
 			</script>
 			
