@@ -16,18 +16,21 @@
 		</div>
 		<div id="main-content">
 			<h3>Javascript Scope</h3>
-			<p>Exapmple of global scope</p>
+			<p>Exapmple of local & global scope</p>
 			
 			<br/>
-			<button onclick="myFunction()">Try It</button> <br/>
-			<p id="demo">Message</p>
+			<!-- <button onclick="myFunction()">Try It</button> -->
+			<p>Result 1 : <span id="demo1"></span></p>
+			<p>Result 2 : <span id="demo2"></span></p>
 			
 			<script>
-				var carName = "Volvo"
-				document.write(typeof carName);
-				function myFunction(){
-					document.getElementById("demo").innerHTML = carName;
-				}
+				var color = "Green";
+				function myFunction() {
+				color = "Red";
+				document.getElementById("demo1").innerHTML = " Inside function color : " + color;
+			}
+				myFunction();
+				document.getElementById("demo2").innerHTML = " Outside function color : " + color;
 			</script>
 			
 			

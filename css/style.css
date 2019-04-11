@@ -9,9 +9,10 @@ body{
 	margin:0 auto;
 }
 #header,#footer{
-	background-color:rgb(58, 8, 8);
+	background-color:rgb(197, 197, 197);
 	text-align:center;
 	padding:15px 10px;
+	color:#664e4e;
 }
 #main-content{
 	min-height:300px;
