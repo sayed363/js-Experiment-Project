@@ -16,21 +16,35 @@
 		</div>
 		<div id="main-content">
 			<h3>Javascript Error Object</h3>
-			<p>You cannot evaluate code that contains a syntax error</p>
+			<p>You cannot convert a number to upper case</p>
 			
 			<br/>
 			
-			<p id="demo">Error Message</p>
+			<p id="demo">Way-1</p>
+			<p id="demo2">Way-2</p>
 			
 			<script>
+				var num = 15;
 				try{
-					eval("alert('Hello world)");
+					toUpperCase(num);
 				}
 				catch(message){
 					document.getElementById("demo").innerHTML = message.name;
 					
 				}
-				<!-- output : SyntaxError -->
+				<!-- output : ReferenceError -->
+				
+				document.write("<br/>")
+				
+				var num = 15;
+				try{
+					num.toUpperCase();
+				}
+				catch(message){
+					document.getElementById("demo2").innerHTML = message.name;
+					
+				}
+				<!-- output : TypeError -->
 				
 			</script>
 			
