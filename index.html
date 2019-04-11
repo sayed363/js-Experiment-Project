@@ -16,35 +16,20 @@
 		</div>
 		<div id="main-content">
 			<h3>Javascript Error Object</h3>
-			<p>You cannot convert a number to upper case</p>
+			<p>You cannot URI decode percent signs</p>
 			
 			<br/>
 			
-			<p id="demo">Way-1</p>
-			<p id="demo2">Way-2</p>
+			<p id="demo">Message</p>
 			
 			<script>
-				var num = 15;
 				try{
-					toUpperCase(num);
+					decodeURI("%%%");
 				}
 				catch(message){
 					document.getElementById("demo").innerHTML = message.name;
-					
 				}
 				<!-- output : ReferenceError -->
-				
-				document.write("<br/>")
-				
-				var num = 15;
-				try{
-					num.toUpperCase();
-				}
-				catch(message){
-					document.getElementById("demo2").innerHTML = message.name;
-					
-				}
-				<!-- output : TypeError -->
 				
 			</script>
 			
