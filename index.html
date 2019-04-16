@@ -22,17 +22,23 @@
 			<!-- <button onclick="myFunction()">Try It</button> -->
 			
 			<p>Result : <span id="demo"></span></p>
+			<p>Result : <span id="demo2"></span></p>
 			<script>
 				var num = [12, 15, 80, 45, 66, 25, 15, 11, 24, 13, 16];
 				var sum = num.reduce(myFunction);
-				
 				function myFunction(total,value,index,array){
-				
 					return total + value;
-					
 				}
 				document.getElementById("demo").innerHTML = sum;
 				
+				//rigtReduce() method
+				
+				var num = [12, 15, 80, 45, 66, 25, 15, 11, 24, 13, 16];
+				var sum = num.reduceRight(myFunction);
+				function myFunction(total,value){
+					return total + value;
+				}
+				document.getElementById("demo2").innerHTML = sum;
 				
 			</script>
 			
